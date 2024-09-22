@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": { "text": "title" },
+    "title": { "text": "Tetanus Vaxination Rates" },
     "projection": {"type":"equalEarth"},
     "width":1000,
     "height":500,
@@ -59,7 +59,8 @@
                 "color":{
                     "field":"COVERAGE",
                     "type": "quantitative",
-                    "scale":{"type":"linear", "scheme":"greens"}
+                    "scale":{"type":"linear", "scheme":"greens"},
+                    "legend": { "title": "Coverage (%)" } 
                 },
                 "tooltip":[
                     {"field":"properties.NAME","type":"nominal","title":"Country"},
