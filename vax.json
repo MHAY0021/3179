@@ -4,6 +4,7 @@
     "projection": {"type":"equalEarth"},
     "width":1000,
     "height":500,
+    "background":"aliceblue",
     "layer":[
         {
             "data": {
