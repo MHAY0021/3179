@@ -3,30 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Website</title>
+    <title>Assignment 2</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="test.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
     <script src="vega_lite_vis.js"></script>
-    <script src="map.js"></script>
+    <script src="tet_vax_map.js"></script>
 </head>
 <body class="p-5">
-    <h1 class = "red">Test Website</h1>
-    <h2>About</h2>
+    <h1>Assignment 2</h1>
+    <h3>Vaccinations</h3>
+    
+    <div class="border text-success w-100 h-100 row">
+
+        
+        
+        <div class="w-25 p-5">
+            <h3>Interactive Scatter Plot</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est optio, excepturi mollitia officiis possimus non reprehenderit velit exercitationem ut fugiat ea doloribus eum rerum asperiores, modi consectetur quisquam. Corrupti, nihil.</p>
+        </div>
+        <div id = "intScat" class="w-75 p-5 " ></div>
+    </div>
+
     <p>makes ure map uses eqisomething for the projection</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit maiores distinctio nostrum rem ea repellat. Odio excepturi eveniet at fugiat iusto aliquam dignissimos ea magni nostrum, quidem commodi odit asperiores?</p>
-    <div class="chartContainer container border text-red p-5">
-        `<p id="chartToggle">Click to toggle text</p>
+    <!-- <div class="chartContainer container border text-red p-5">
+        <p id="chartTogggle">Click to toggle text</p>
         <p id='chart1'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis sapiente eligendi eos quibusdam eum reiciendis explicabo, voluptatem consequuntur, officia autem vero exercitationem animi illum est! Optio modi soluta sunt a.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reprehenderit repudiandae et, eaque quas accusamus aut, tempora est delectus rerum expedita laboriosam numquam iusto sunt dignissimos doloremque a iste repellendus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, ipsa reiciendis ex asperiores quia magni corporis vero cum delectus doloremque, maiores quaerat tempore ut blanditiis, eaque nostrum est ab voluptatum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione quis laboriosam dignissimos id impedit dolorum architecto nihil, excepturi eveniet repellat! Consectetur provident nihil sit quasi vero tenetur. Magni, aspernatur asperiores.</p>
         <button id="incButton">Increase counter</button>
         <span id="counter" numberOfClicks="0">0</span>
+    </div> -->
+
+    <div class="chartContainer container border text-success p-5">
+        <h2  id = "chartToggle">Flu</h2>
+        <div id = "chart2">
+            <h3>Flu Vaccination Availbility</h3>
+            <div id = "mapFlu"></div>
+        </div>
     </div>
+
     <div class="chartContainer container border text-success bg-dark p-5">
-        <h2>Vax maps</h2>
-        <div id="map"></div>
-        <p>Coverage (% of people who should be vaxinated)</p>
+        <h2>Tetnus Vaccinations</h2>
+        <div id="map_tetVax"></div>
+        <h2>Tetnus Cases</h2>
+        <div id="map_tetCases"></div>
     </div>
     
     
