@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 Matt</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="assignment.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="vega_lite_vis.js"></script>
+    <script src="tet_vax_map.js"></script>
+</head>
+<body class="p-5">
+    <div class="mainBody">
+
+   
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
+        <div class="row">
+            <div id="buffer"></div>
+            <div class = "small">
+                <h3>Vaccinations</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, architecto? Odit officia quidem quisquam culpa voluptates est quae labore magni officiis! Ratione rem nulla sint sapiente recusandae itaque eos tempore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iusto quis laudantium ut error, numquam molestias nesciunt accusantium quos veritatis sed consequuntur voluptatem reiciendis veniam labore, exercitationem aperiam iure necessitatibus?
+                </p>
+            </div>
+            <div id="buffer"></div>
+            <div class = "small">
+                <img src="vaxImage.png" alt="Drawing of a needle">
+            </div>
+        </div>
+        <div class="row">
+            <div class = "big" id="map_tetVax">
+                <!-- <div id = "mapFlu"></div> -->
+            </div>
+            <div class ="small">
+                <h4>Lorem ipsum</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong>Dignissimos, architecto?</strong> Odit officia quidem quisquam culpa voluptates est quae labore magni officiis! <br>Ratione rem nulla sint sapiente recusandae itaque eos tempore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br>Beatae iusto quis laudantium ut error, numquam molestias nesciunt accusantium quos veritatis sed consequuntur voluptatem reiciendis veniam labore, exercitationem aperiam iure necessitatibus?
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quos fuga labore libero unde beatae ea odio quis cumque praesentium, quidem inventore quasi asperiores omnis sequi itaque aut. Quo, soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolorem aliquid, nobis ullam totam, delectus veritatis optio consectetur reiciendis nam quia atque possimus error doloremque officia. Accusantium nostrum ex ipsam!
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class ="small">
+                <h4>Lorem ipsum</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong>Dignissimos, architecto?</strong> Odit officia quidem quisquam culpa voluptates est quae labore magni officiis! <br>Ratione rem nulla sint sapiente recusandae itaque eos tempore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br>Beatae iusto quis laudantium ut error, numquam molestias nesciunt accusantium quos veritatis sed consequuntur voluptatem reiciendis veniam labore, exercitationem aperiam iure necessitatibus?
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quos fuga labore libero unde beatae ea odio quis cumque praesentium, quidem inventore quasi asperiores omnis sequi itaque aut. Quo, soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolorem aliquid, nobis ullam totam, delectus veritatis optio consectetur reiciendis nam quia atque possimus error doloremque officia. Accusantium nostrum ex ipsam!
+                </p>
+            </div>
+            <div class = "big" id="intScat"></div>
+        </div>
+        <div class="row">
+            <div class = "big" id="mapFlu">
+
+            </div>
+            <div class ="small">
+                <h4>Lorem ipsum</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong>Dignissimos, architecto?</strong> Odit officia quidem quisquam culpa voluptates est quae labore magni officiis! <br>Ratione rem nulla sint sapiente recusandae itaque eos tempore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br>Beatae iusto quis laudantium ut error, numquam molestias nesciunt accusantium quos veritatis sed consequuntur voluptatem reiciendis veniam labore, exercitationem aperiam iure necessitatibus?
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quos fuga labore libero unde beatae ea odio quis cumque praesentium, quidem inventore quasi asperiores omnis sequi itaque aut. Quo, soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolorem aliquid, nobis ullam totam, delectus veritatis optio consectetur reiciendis nam quia atque possimus error doloremque officia. Accusantium nostrum ex ipsam!
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class = small>
+
+            </div>
+            <div class="small">
+                <h4>Lorem ipsum</h4>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong>Dignissimos, architecto?</strong> Odit officia quidem quisquam culpa voluptates est quae labore magni officiis! <br>Ratione rem nulla sint sapiente recusandae itaque eos tempore.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br>Beatae iusto quis laudantium ut error, numquam molestias nesciunt accusantium quos veritatis sed consequuntur voluptatem reiciendis veniam labore, exercitationem aperiam iure necessitatibus?
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quos fuga labore libero unde beatae ea odio quis cumque praesentium, quidem inventore quasi asperiores omnis sequi itaque aut. Quo, soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolorem aliquid, nobis ullam totam, delectus veritatis optio consectetur reiciendis nam quia atque possimus error doloremque officia. Accusantium nostrum ex ipsam!
+                </p>
+            </div>
+            <div class ="small">
+
+            </div>
+        </div>
+
+     </div>
+</body>
+</html>
